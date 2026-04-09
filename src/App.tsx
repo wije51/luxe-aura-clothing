@@ -108,7 +108,7 @@ export default function App() {
                   playsInline
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 >
-                  <source src="https://assets.mixkit.co/videos/preview/mixkit-girl-in-a-white-dress-walking-in-a-field-34406-large.mp4" type="video/mp4" />
+                  <source src="/Girl_performing_pirouette_202604092249.mp4" type="video/mp4" />
                 </video>
                 <div className="absolute inset-0 bg-black/10 group-hover:bg-black/0 transition-colors duration-500" />
               </motion.div>
