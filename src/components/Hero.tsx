@@ -21,20 +21,53 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 text-center px-6 max-w-4xl mt-12">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: { opacity: 0 },
+            visible: {
+              opacity: 1,
+              transition: { staggerChildren: 0.2, delayChildren: 0.3 }
+            }
+          }}
         >
-          <span className="text-white/80 uppercase tracking-[0.3em] text-[10px] md:text-sm font-medium mb-4 block">
+          <motion.span 
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
+            }}
+            className="text-white/80 uppercase tracking-[0.3em] text-[10px] md:text-sm font-medium mb-4 block"
+          >
             Spring / Summer 2026
-          </span>
-          <h1 className="text-white text-5xl md:text-8xl lg:text-9xl font-serif mb-8 leading-[0.9] tracking-tighter text-balance">
+          </motion.span>
+          
+          <motion.h1 
+            variants={{
+              hidden: { opacity: 0, scale: 0.95, filter: 'blur(10px)' },
+              visible: { opacity: 1, scale: 1, filter: 'blur(0px)', transition: { duration: 1.2, ease: [0.22, 1, 0.36, 1] } }
+            }}
+            className="text-white text-5xl md:text-8xl lg:text-9xl font-serif mb-8 leading-[0.9] tracking-tighter text-balance"
+          >
             Elegance <br /> <span className="italic">Redefined</span>
-          </h1>
-          <p className="text-white/70 text-base md:text-xl max-w-xl mx-auto mb-10 font-light leading-relaxed">
+          </motion.h1>
+
+          <motion.p 
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
+            }}
+            className="text-white/70 text-base md:text-xl max-w-xl mx-auto mb-10 font-light leading-relaxed"
+          >
             Discover our curated collection of timeless pieces designed for the modern woman who values sophistication and grace.
-          </p>
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          </motion.p>
+
+          <motion.div 
+            variants={{
+              hidden: { opacity: 0, y: 20 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: [0.22, 1, 0.36, 1] } }
+            }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -49,7 +82,7 @@ export default function Hero() {
             >
               View Lookbook
             </motion.button>
-          </div>
+          </motion.div>
         </motion.div>
       </div>
 

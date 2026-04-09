@@ -69,7 +69,7 @@ export const products: Product[] = [
     name: 'Tweed Heritage Jacket',
     category: 'Outerwear',
     price: 950,
-    image: 'https://images.unsplash.com/photo-1544441893-675973e31d85?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&q=80&w=800',
     description: 'Classic tweed jacket with modern proportions and fringed edges.',
     details: ['Wool blend tweed', 'Silk lining', 'Custom buttons']
   }
