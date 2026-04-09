@@ -1,20 +1,32 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Luxe Aura - Elegant Women's Fashion
 
-# Run and deploy your AI Studio app
+Welcome to **Luxe Aura**, a beautifully designed, high-end, and elegant women's fashion static frontend application.
 
-This contains everything you need to run your app locally.
+This project is built using:
+- React 19
+- Vite
+- Tailwind CSS v4
+- Framer Motion (for beautiful subtle animations)
 
-View your app in AI Studio: https://ai.studio/apps/d32932e7-f363-459b-a52f-9fa6612dd9a4
+## Running the Project Locally
 
-## Run Locally
+No API keys or backend connections are required. This is a purely static frontend site.
 
-**Prerequisites:**  Node.js
+1. Install all dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open http://localhost:3000 to view it in the browser.
 
+## Deployment
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Since this project has been fully decoupled from any backend services, it is 100% ready for deployment as a static frontend. You can easily deploy this using Vercel, Netlify, or GitHub Pages.
+
+To create a production build:
+```bash
+npm run build
+```
